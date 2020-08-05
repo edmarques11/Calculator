@@ -58,8 +58,8 @@ export default class Calculator extends Component {
             return;
         }
 
-        const clearDisplay = this.state.displayValue === '0'
-            || this.state.clearDisplay;
+        const firstVerification = this.state.displayValue === '0' && n !== "."
+        const clearDisplay = firstVerification || this.state.clearDisplay;
         const currentValue = clearDisplay ? '' : this.state.displayValue;
         const displayValue = currentValue + n;
         this.setState({ displayValue, clearDisplay: false });
