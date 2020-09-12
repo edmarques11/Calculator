@@ -100,7 +100,7 @@ export default class Calculator extends Component {
                     <Button label="=" click={this.setOperation} operation />
                 </div>
                 <div className="produtor">Make by&nbsp;
-                <a href="https://edmarques11.github.io/Calculator/">Edmarques Lima</a>.</div>
+                <a href="">Edmarques Lima</a>.</div>
             </React.Fragment>
         );
     };
